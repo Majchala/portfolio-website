@@ -9,8 +9,7 @@
 }
 
 body {
-    font-family: ;
-    font-size: 16px;
+    font-family: sans-serif;
     font-weight: normal;
     overflow-x: hidden;
     background-color: var(--white);
@@ -21,6 +20,7 @@ body {
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
+    margin: 0
 }
 
 ul {
@@ -28,8 +28,16 @@ ul {
 }
 
 .container {
-    max-width: 1140px;
+    max-width: 1300px;
     margin: auto;
+}
+
+img {
+    vertical-align: middle;
+    max-height: 800px;
+    max-width: 800px;
+    
+    
 }
 
 .row {
@@ -41,13 +49,45 @@ ul {
     justify-content: space-between;
 }
 
+.justify-content-center {
+    justify-content: center;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+.btn-1 {
+    background-color: red;
+    padding: 15px 40px;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    font-size: 16px;
+    text-transform: capitalize;
+    font-weight: 600;
+    transition: all 0.3s ease-out;
+}
+
+.btn-1:hover {
+    background-color: pink;
+    color: white;
+}
+
 /* NAVBAR */
 .navbar {
     position: fixed;
     z-index: 999;
     width: 100%;
-    background-color: red;
     padding: 25px;
+    transition: all 0.5s ease;
+}
+
+.scrolled {
+    background-color: blue;
+    padding: 12px 25px;
+    box-shadow: var(--shadow-black-100);
+
 }
 
 .navbar .logo a {
@@ -68,7 +108,7 @@ ul {
 }
 
 .navbar .menu .nav-item .nav-link {
-    color: white;
+    color: black;
     font-size: 16px;
     font-weight: 600;
     display: block;
@@ -122,5 +162,167 @@ ul {
 }
 
 
+.scrolled .menu .nav-item .nav-link {
+    color: red;
+}
 
+.navbar .sticky .nav-item a span,
+.navbar .sticky .nav-item a span::before, 
+.navbar .sticky .nav-item a span::before {
+background-color: white;
+}
+
+/* HOME SECTION */
+.home-section {
+    position: relative;
+    z-index: 1;
+    overflow-x: hidden;
+    padding-top: 80px;
+}
+
+.home-section .home-text, 
+.home-section .home-image {
+    flex: 0 0 50%;
+    max-width: 50%;
+    padding: 0 25px;
+}
+
+
+.home-section .home-text h4 {
+    font-size: 30px;
+    font-weight: 600;
+    letter-spacing: 4px;
+    color: yellow;
+}
+
+.home-section .home-text h1 {
+    font-size: 50px;
+    font-weight: 700;
+    margin-top: 15px;
+    color: red;
+}
+
+.home-section .home-text span {
+    font-size: 18px;
+    line-height: 28px;
+    color: pink;
+    font-weight: 500;
+    display: block;
+    margin-top: 15px;
+}
+
+.home-section .home-text p {
+    font-size: 16px;
+    color: blue;
+    font-weight: 24px;
+    margin-top: 15px;
+}
+
+.home-section .home-text .btn {
+    display: inline-block;
+    margin-top: 15px;
+}
+
+.home-section .home-image .img-box img {
+    position: relative;
+    width: 100%;
+    z-index: 789;
+}
+
+.header-hero-shape {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 100%;
+}
+
+.header-hero-shape::before {
+    position: absolute;
+    content: '';
+    width: 1000%;
+    height: 100%;
+    background-color: grey;
+    transform: skewX(20deg);
+    top: 0;
+    left: 0;
+}
+
+.social {
+    position: absolute;
+    top: 53%;
+    left: 50px;
+    transform: translate(-53%);
+    border: 1px solid black;
+    border-radius: 50px;
+}
+
+.social li a {
+    font-size: 18px;
+    display: block;
+    text-align: center;
+    padding: 20px;
+    color: blue;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.social li a:hover {
+    color: yellow;
+
+}
+
+
+
+
+
+
+/* PROJECTS SECTION */
+.my-projects {
+    color: var(--light-color);
+    background-color: grey;
+    text-align: center;
+    padding: 5em 2em;
+  }
+
+  .my-projects h2 {
+    margin-bottom: 30px;
+  }
+
+  .portfolio {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)) !important;
+  }
+
+  .portfolio-item {
+    background: blue;
+    overflow: hidden;
+  }
+
+  .portfolio-img {
+    max-width: 100%;
+    transition: 
+        transform 750ms cubic-bezier(.5, 0, .5, 1),
+        opacity 250ms linear;
+  }
+
+  .portfolio-item:focus {
+    position: relative;
+    z-index: 2;
+  }
+
+  .portfolio-img:hover, 
+  .portfolio-img:focus {
+    transform: scale(1.2);
+    opacity: .5;
+    background-color: yellow;
+  }
+
+  /* FOOTER SECTION */
+footer {
+    background-color: green;
+}
+
+footer p {
+    padding: 15px 0;
+}
 

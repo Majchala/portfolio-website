@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Testovací portfolio</title>
     <!-- FONT AWESOME -->
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" 
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- CUSTOM FONTS -->
 
     <!-- GENERAL CSS -->
@@ -33,16 +35,78 @@
 
     <!-- HOME SECTION -->
     <section class="home-section" id="home">
+        <ul class="social">
+            <li><a href="#"><i class="fa-brands fa-github"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
+            <li><a href="#"><i class="fa-solid fa-envelope"></i></a></li>
+        </ul>
+        
         <div class="container">
-            <div class="row">
-                <div class="home-text"></div>
-                <div class="home-image"></div>
+            <div class="row align-items-center">
+                <div class="home-text">
+                    <h4>Hi!</h4>
+                    <h1>Míša</h1>
+                    <span>Něco něco něco</span>
+                    <p>AAAAA znova něco něco něco AAAAA znova něco něco něco AAAAA znova něco něco něco 
+                        AAAA znova něco něco něco AAAAA znova něco něco něco AAAAA znova něco něco něco  
+                    </p>
+                    <a href="#" class="btn btn-1">My CV</a>
+                </div>
+
+
+                <div class="home-image">
+                    <div class="img-box">
+                        <img src="header.png" alt="DOPLNIT" id="header-img">
+                    </div>
+                </div>
             </div>
         </div>
+        <!-- HEADER SHAPE -->
+        <div class="header-hero-shape"></div>
     </section>
 
 
+
+
+
+
+    <!--PROJECTS-->
+    <section class="my-projects" id="my-projects">
+    <h2 class="section-title">Projects</h2>
+    <p class="section-subtitle"></p>
+    
+    <div class="portfolio">
+        <a href="https://docs.google.com/spreadsheets/d/1ukaLfPZ7_-vq26wd6Q3MUMYBOdOWG9ra/edit?pli=1#gid=1684739351" class="portfolio-item" 
+        target=”_blank”>
+            <img src="images/husky.png" alt="Husky club registration" class="portfolio-img">
+        </a>
+    
+        <a href="https://docs.google.com/spreadsheets/d/1wWqgIYCuqT996LtH5Dqk-QC5GMm7EyE-Lejr2Ngm-zY/edit?hl=cs#gid=633494028" class="portfolio-item"
+        target=”_blank”>
+            <img src="images/spotify.png" alt="Spotify playlist sharing" class="portfolio-img">
+        </a>
+    
+        <a href="https://hackujvbrne.netlify.app" class="portfolio-item"
+        target="_blank">
+            <img src="images/hackuj.png" alt="Háčkuj v Brně" class="portfolio-img">
+        </a>
+    
+        <a href="#" class="portfolio-item">
+            <img src="images/tbc.png" alt="tbc" class="portfolio-img">
+        </a>
+    
+    </div>
+    </section>
+
+    <!-- FOOTER SECTION -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row justify-content-center">
+                <p class="copyright-text">&copy; 2023 by Míša</p>
+            </div>
+        </div>
+    </footer>
     <!-- GENERAL JS -->
-    <script src="general.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
