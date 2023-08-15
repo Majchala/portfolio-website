@@ -1,5 +1,0 @@
-nav + home > https://www.youtube.com/watch?v=4DNUKvsAYjA&list=PLrKudo5h_b8CKGtcPWIYtWmbTokv8QhlY&index=5&ab_channel=CrypticalCoder
-skills > https://www.youtube.com/watch?v=SLMGcfKan_s&ab_channel=CrypticalCoder
-contact > https://www.youtube.com/watch?v=SLMGcfKan_s&ab_channel=CrypticalCoder
-projects > může zůstat, jak je 
-dark mode, js?? > https://portflix-website-tutorial.netlify.app/#contact
