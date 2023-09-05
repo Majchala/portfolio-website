@@ -21,10 +21,4 @@ lightModeToggle.addEventListener('click', () => {
 });
 
 
-// SKILL PROGRESS BAR
-const progressBars = document.querySelectorAll('.progress-line');
 
-progressBars.forEach(bar => {
-    const progress = bar.getAttribute('data-progress');
-    bar.style.width = progress;
-});

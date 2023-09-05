@@ -298,65 +298,14 @@ ul {
 }
 
 /* SKILLS SECTION */
-.about-section .about-skills {
-    padding-bottom: 5rem;
+.devicon {
+    color: var(--yellow-color);
+    font-size: 50px;
+    padding-left: 3px;
 }
 
-.skill-item .skill-header {
-    position: relative;
-}
-
-.skill-item .skill-header .skill-title {
-    font-size: 14px;
-    font-weight: 500;
-    margin-top: 15px;
-}
-
-.skill-item .skill-header .skill-percentage {
-    position: absolute;
-    top: -3px;
-    right: 0;
-}
-
-.skill-item .skill-header .skill-percentage p {
-    font-size: 14px;
-    font-weight: 400;
-}
-
-.skill-item .skill-bar {
-    margin-top: 15px;
-}
-
-.skill-item .skill-bar .bar-inner {
-    width: 100%;
-    height: 9px;
-    border-radius: 5px;
-    background-color: grey;
-    position: relative;
-}
-
-.skill-item .skill-bar .bar-inner .progress-line {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 9px;
-    border-radius: 5px;
-    background-color: var(--blue-color);
-    width: 80%;
-}
-
-.about-content .tobelearned {
-    padding-top: 4rem;
-}
-
-.about-content .tobelearned h3 {
-    padding-bottom: 1rem;
-}
-
-.about-content .tobelearned span {
-    color: var(--blue-color);
-    font-family: var(--general-font);
-    font-size: inherit;
+.about-section .about-skills h3 {
+    padding: 2rem 0 0.6rem;
 }
 
 /* PROJECTS SECTION */
@@ -517,7 +466,7 @@ body.light-mode .home .row .image img {
 }
 
 body.light-mode .home {
-    background-image: url(../background.jpg) !important;
+    background-image: url(images/background.jpg) !important;
     background-repeat: none;
     background-size: cover;
 }
@@ -535,8 +484,8 @@ body.light-mode .about-section .about-content {
     color: #333;
 }
 
-body.light-mode .about-content .tobelearned span {
-    color: #4D64A8;
+body.light-mode .devicon {
+    color: var(--main-color);
 }
 
 body.light-mode .social {
@@ -550,10 +499,6 @@ body.light-mode .social li a {
 body.light-mode .social li a:hover {
     color: var(--pink-color);
     transform: scale(1.2);
-}
-
-body.light-mode .skill-item .skill-bar .bar-inner .progress-line {
-    background-color: #4D64A8;
 }
 
 body.light-mode .my-projects {
